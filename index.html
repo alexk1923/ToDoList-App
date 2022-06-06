@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+        <h1>todos</h1>
+            <div class="task-adboard">
+                <div class="add-task">
+                    <i class="fa-solid fa-angle-down" id="arrow-icon" onClick="selectAllTasks()"></i>
+                    <input type="text" id="add-input" name="add-task" placeholder="What needs to be done?">
+                </div>
+                <ul class="items">
+                </ul>
+                <div class="bottom-bar">
+                    <label class="items-counter">Items left: ?</label>
+                    <div class="status">
+                        <label class="all-task selected-view" onClick="showAll(event)">All</label>
+                        <label class="active-task" onClick="showActive(event)">Active</label>
+                        <label class="completed-task" onClick="showCompleted(event)">Completed</label>
+                    </div>
+                    <label class="clear" onClick="clearCompleted(event)">Clear completed</label>
+                </div>
+            </div>
+            <footer class="info">
+                <p>Double click to edit a to-do</p>
+                <p>Created by <a href="https://github.com/alexk1923">Alexandru Kullman</a></p>
+                <p>Inspired by <a href="https://todomvc.com/examples/vanillajs/#/">todomvc.com</a></p>
+            </footer>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/391f2c263f.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" crossorigin="anonymous"></script>
+</body>
+</html>
